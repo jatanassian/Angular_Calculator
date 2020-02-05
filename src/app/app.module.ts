@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
-import { KeyComponent } from './components/key/key.component';
+import { NumberComponent } from './components/number/number.component';
+import { OperatorComponent } from './components/operator/operator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
-    KeyComponent
+    NumberComponent,
+    OperatorComponent
   ],
   imports: [
     BrowserModule
