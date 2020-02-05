@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-operator',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./operator.component.css']
 })
 export class OperatorComponent implements OnInit {
+  @Input() value: any;
 
   constructor() { }
 
