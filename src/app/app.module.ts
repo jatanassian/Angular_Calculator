@@ -6,6 +6,8 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
 import { NumberComponent } from './components/number/number.component';
 import { OperatorComponent } from './components/operator/operator.component';
 import { EqualComponent } from './components/equal/equal.component';
+import { DecimalComponent } from './components/decimal/decimal.component';
+import { ClearComponent } from './components/clear/clear.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { EqualComponent } from './components/equal/equal.component';
     CalculatorComponent,
     NumberComponent,
     OperatorComponent,
-    EqualComponent
+    EqualComponent,
+    DecimalComponent,
+    ClearComponent
   ],
   imports: [
     BrowserModule
