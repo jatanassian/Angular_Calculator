@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { NumberComponent } from './components/number/number.component';
 import { OperatorComponent } from './components/operator/operator.component';
+import { EqualComponent } from './components/equal/equal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     NumberComponent,
-    OperatorComponent
+    OperatorComponent,
+    EqualComponent
   ],
   imports: [
     BrowserModule
