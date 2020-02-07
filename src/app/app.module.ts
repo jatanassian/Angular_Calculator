@@ -8,6 +8,7 @@ import { OperatorComponent } from './components/operator/operator.component';
 import { EqualComponent } from './components/equal/equal.component';
 import { DecimalComponent } from './components/decimal/decimal.component';
 import { ClearComponent } from './components/clear/clear.component';
+import { DisplayComponent } from './components/display/display.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ClearComponent } from './components/clear/clear.component';
     OperatorComponent,
     EqualComponent,
     DecimalComponent,
-    ClearComponent
+    ClearComponent,
+    DisplayComponent
   ],
   imports: [
     BrowserModule
