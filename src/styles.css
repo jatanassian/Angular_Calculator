@@ -3,3 +3,10 @@
 body {
   background-color: #6dc5ff;
 }
+
+button {
+  border: solid 1px #c4c4c4;
+  height: 60px;
+  background-color: #26a6fc;
+  font-family: 'Lato', sans-serif;
+}
