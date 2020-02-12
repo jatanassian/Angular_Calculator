@@ -11,7 +11,7 @@ export class AppComponent {
   currentNumber = 0; // What's displayed in the input element
   firstOperand = null; // Value of the first operand of the operation
   operator = null; // Value of the operator
-  waitingForSecondNumber = false; // Value indicating if the user has finished typing the first operand
+  waitingForSecondNumber = false; // Value indicating if the user has finished typing the first operand and is ready to type the second operand
 
   getNumber(nb) {
     console.log(nb);
