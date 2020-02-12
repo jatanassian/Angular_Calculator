@@ -13,7 +13,14 @@ export class AppComponent {
   operator = null; // Value of the operator
   waitingForSecondNumber = false; // Value indicating if the user has finished typing the first operand and is ready to type the second operand
 
-  getNumber(nb) {
+  getNumber(nb: number) {
     console.log(nb);
+
+    if (this.waitingForSecondNumber) {
+      this.currentNumber = nb;
+      this.waitingForSecondNumber = false;
+    } else {
+      this.currentNumber += nb;
+    }
   }
 }
