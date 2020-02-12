@@ -13,4 +13,7 @@ export class AppComponent {
   operator = null;
   waitingForSecondNumber = false;
 
+  getNumber(nb) {
+    console.log(nb);
+  }
 }
