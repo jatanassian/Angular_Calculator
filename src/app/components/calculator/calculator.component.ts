@@ -7,10 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  currentNumber = 0;
-  firstOperand = null;
-  operator = null;
-  waitingForSecondNumber = false;
 
   constructor() { }
 

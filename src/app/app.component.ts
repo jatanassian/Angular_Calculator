@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-calculator';
+
+  currentNumber = 0;
+  firstOperand = null;
+  operator = null;
+  waitingForSecondNumber = false;
+
 }
