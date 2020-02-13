@@ -20,7 +20,7 @@ export class AppComponent {
       this.currentNumber = nb;
       this.waitingForSecondNumber = false;
     } else {
-      this.currentNumber === "0" ? this.currentNumber = nb : this.currentNumber += nb;
+      this.currentNumber === "0" ? this.currentNumber = nb : this.currentNumber += nb; // Prevents displaying "012" instead of "12"
     }
   }
 
