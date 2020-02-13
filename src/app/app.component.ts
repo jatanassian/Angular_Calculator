@@ -25,7 +25,9 @@ export class AppComponent {
   }
 
   getDecimal(d: string) {
-    console.log(d);
-
+    // Adds the decimal symbol only if it's not already there
+    if (!this.currentNumber.includes(d)) {
+      this.currentNumber += d;
+    }
   }
 }
