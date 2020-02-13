@@ -6,7 +6,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./number.component.css']
 })
 export class NumberComponent implements OnInit {
-  @Input() value: number;
+  @Input() value: string;
 
   @Output() getNumber = new EventEmitter();
 
