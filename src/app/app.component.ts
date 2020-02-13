@@ -23,4 +23,10 @@ export class AppComponent {
       this.currentNumber === 0 ? this.currentNumber = nb : this.currentNumber += nb;
     }
   }
+
+  getDecimal(d: string) {
+    console.log(d);
+
+
+  }
 }

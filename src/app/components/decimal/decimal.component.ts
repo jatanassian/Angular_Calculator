@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-decimal',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DecimalComponent implements OnInit {
 
+  @Output() getDecimal = new EventEmitter;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  sendDecimal() {
+    this.getDecimal.emit(".");
   }
 
 }
