@@ -12,9 +12,9 @@
   <app-number (getNumber)="getNumber($event)" value="0"></app-number>
   <app-decimal (getDecimal)="getDecimal($event)"></app-decimal>
   <app-clear></app-clear>
-  <app-operator value='+'></app-operator>
-  <app-operator value='-'></app-operator>
-  <app-operator value='*'></app-operator>
-  <app-operator value='/'></app-operator>
+  <app-operator (getOperation)="getOperation($event)" value='+'></app-operator>
+  <app-operator (getOperation)="getOperation($event)" value='-'></app-operator>
+  <app-operator (getOperation)="getOperation($event)" value='*'></app-operator>
+  <app-operator (getOperation)="getOperation($event)" value='/'></app-operator>
   <app-equal value='='></app-equal>
 </div>
