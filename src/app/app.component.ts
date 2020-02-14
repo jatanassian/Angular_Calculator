@@ -30,4 +30,17 @@ export class AppComponent {
       this.currentNumber += d;
     }
   }
+
+  doCalculation(operator: string, secondOperand: number) {
+    switch(operator) {
+      case "+":
+        return this.firstOperand += secondOperand;
+      case "-":
+        return this.firstOperand -= secondOperand;
+      case "*":
+        return this.firstOperand *= secondOperand;
+      case "/":
+        return this.firstOperand /= secondOperand;
+    }
+  }
 }
