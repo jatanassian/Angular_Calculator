@@ -31,6 +31,10 @@ export class AppComponent {
     }
   }
 
+  getOperation(operator: string) {
+    console.log(operator);
+  }
+
   doCalculation(operator: string, secondOperand: number) {
     switch(operator) {
       case "+":
