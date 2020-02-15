@@ -32,6 +32,11 @@ export class AppComponent {
   }
 
   getOperation(operator: string) {
+    // Switch the operator. Needs to add that you can change operator as long as there's no second operand
+    // if (this.operator !== null) {
+    //   this.operator = operator;
+    // }
+
     this.firstOperand = this.currentNumber;
     this.operator = operator;
     this.waitingForSecondNumber = true;
