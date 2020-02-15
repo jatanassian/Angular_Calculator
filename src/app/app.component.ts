@@ -65,6 +65,9 @@ export class AppComponent {
   }
 
   clear() {
-    console.log("clear");
+    this.currentNumber = "0";
+    this.operator = null;
+    this.firstOperand = null;
+    this.waitingForSecondNumber = false;
   }
 }
