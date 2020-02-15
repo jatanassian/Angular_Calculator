@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-calculator';
 
-  currentNumber = "0"; // What's displayed in the input element
-  firstOperand = null; // Value of the first operand of the operation
-  operator = null; // Value of the operator
-  waitingForSecondNumber = false; // Value indicating if the user has finished typing the first operand and is ready to type the second operand
+  currentNumber: string = "0"; // What's displayed in the input element
+  firstOperand: number = null; // Value of the first operand of the operation
+  operator: string = null; // Value of the operator
+  waitingForSecondNumber: boolean = false; // Value indicating if the user has finished typing the first operand and is ready to type the second operand
 
   getNumber(nb: string) {
     console.log(nb);
@@ -37,14 +37,14 @@ export class AppComponent {
     //   this.operator = operator;
     // }
 
-    this.firstOperand = this.currentNumber;
+    this.firstOperand = Number(this.currentNumber);
     this.operator = operator;
     this.waitingForSecondNumber = true;
   }
 
   getResult() {
     const result = this.doCalculation(this.operator, Number(this.currentNumber));
-    this.currentNumber = result;
+    this.currentNumber = String(result);
     this.firstOperand = result;
   }
 
