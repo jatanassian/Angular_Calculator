@@ -43,7 +43,9 @@ export class AppComponent {
   }
 
   getResult() {
-    console.log("result");
+    const result = this.doCalculation(this.operator, Number(this.currentNumber));
+    this.currentNumber = result;
+    this.firstOperand = result;
   }
 
   doCalculation(operator: string, secondOperand: number) {
