@@ -42,6 +42,10 @@ export class AppComponent {
     this.waitingForSecondNumber = true;
   }
 
+  getResult() {
+    console.log("result");
+  }
+
   doCalculation(operator: string, secondOperand: number) {
     switch(operator) {
       case "+":
