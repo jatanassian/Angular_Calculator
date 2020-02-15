@@ -36,6 +36,9 @@ export class AppComponent {
     // if (this.operator !== null) {
     //   this.operator = operator;
     // }
+    if (this.operator) {
+      this.getResult();
+    }
 
     this.firstOperand = Number(this.currentNumber);
     this.operator = operator;
