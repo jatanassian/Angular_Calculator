@@ -32,7 +32,9 @@ export class AppComponent {
   }
 
   getOperation(operator: string) {
-    console.log(operator);
+    this.firstOperand = this.currentNumber;
+    this.operator = operator;
+    this.waitingForSecondNumber = true;
   }
 
   doCalculation(operator: string, secondOperand: number) {
