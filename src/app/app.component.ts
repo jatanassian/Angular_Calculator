@@ -63,4 +63,8 @@ export class AppComponent {
         return this.firstOperand /= secondOperand;
     }
   }
+
+  clear() {
+    console.log("clear");
+  }
 }

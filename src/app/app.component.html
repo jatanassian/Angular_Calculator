@@ -11,7 +11,7 @@
   <app-number (getNumber)="getNumber($event)" value="9"></app-number>
   <app-number (getNumber)="getNumber($event)" value="0"></app-number>
   <app-decimal (getDecimal)="getDecimal($event)"></app-decimal>
-  <app-clear></app-clear>
+  <app-clear (clear)="clear($event)"></app-clear>
   <app-operator (getOperation)="getOperation($event)" value='+'></app-operator>
   <app-operator (getOperation)="getOperation($event)" value='-'></app-operator>
   <app-operator (getOperation)="getOperation($event)" value='*'></app-operator>

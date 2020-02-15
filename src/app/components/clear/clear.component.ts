@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-clear',
@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clear.component.css']
 })
 export class ClearComponent implements OnInit {
+  @Output() clear = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  sendClear() {
+    this.clear.emit();
   }
 
 }
