@@ -120,6 +120,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-calculator"
+    }
+  },
+  "defaultProject": "angular-calculator",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
+    }
+  }
 }
