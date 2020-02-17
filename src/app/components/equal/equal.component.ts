@@ -3,7 +3,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-equal',
   templateUrl: './equal.component.html',
-  styleUrls: ['./equal.component.css']
+  styleUrls: ['./equal.component.scss']
 })
 export class EqualComponent implements OnInit {
   @Input() value: any;
