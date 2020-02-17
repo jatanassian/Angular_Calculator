@@ -3,7 +3,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 @Component({
   selector: 'app-clear',
   templateUrl: './clear.component.html',
-  styleUrls: ['./clear.component.css']
+  styleUrls: ['./clear.component.scss']
 })
 export class ClearComponent implements OnInit {
   @Output() clear = new EventEmitter();
