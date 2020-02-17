@@ -35,6 +35,10 @@ export class AppComponent {
     this.currentNumber = String(Number(this.currentNumber)/100);
   }
 
+  oppositeSign() {
+    this.currentNumber = String(-this.currentNumber);
+  }
+
   getOperation(operator: string) {
     // Switch the operator. Needs to add that you can change operator as long as there's no second operand
     // if (this.operator !== null) {
