@@ -31,6 +31,10 @@ export class AppComponent {
     }
   }
 
+  divideByHundred() {
+    this.currentNumber = String(Number(this.currentNumber)/100);
+  }
+
   getOperation(operator: string) {
     // Switch the operator. Needs to add that you can change operator as long as there's no second operand
     // if (this.operator !== null) {
