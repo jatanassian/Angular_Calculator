@@ -12,7 +12,8 @@
   text-shadow: $text-shadow;
 }
 
-body, head {
+body {
+  z-index: -10;
   background: #123;
   display: flex;
   justify-content: center;
@@ -20,8 +21,8 @@ body, head {
   color: transparent;
 }
 
-head::before, head::after,
 body::before, body::after {
+  z-index: -10;
   top: 50%;
   left: 50%;
   width: 3em;
@@ -33,27 +34,17 @@ body::before, body::after {
 
 
 body::before {
+  z-index: -10;
   @include dots(40);
   animation-duration: 44s;
   animation-delay: -27s;
 }
 
 body::after {
+  z-index: -10;
   @include dots(40);
   animation-duration: 43s;
   animation-delay: -32s;
-}
-
-head::before {
-  @include dots(40);
-  animation-duration: 42s;
-  animation-delay: -23s;
-}
-
-head::after {
-  @include dots(40);
-  animation-duration: 41s;
-  animation-delay: -19s;
 }
 
 @keyframes move {
