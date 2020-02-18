@@ -14,14 +14,14 @@
 
 body, head {
   background: #123;
-  display: block;
+  display: flex;
+  justify-content: center;
   font-size: 52px;
   color: transparent;
 }
 
 head::before, head::after,
 body::before, body::after {
-  position: fixed;
   top: 50%;
   left: 50%;
   width: 3em;
@@ -63,11 +63,4 @@ head::after {
   to {
     transform: rotate(360deg) scale(18) translateX(20px);
   }
-}
-
-button {
-  border: solid 1px #c4c4c4;
-  height: 60px;
-  background-color: #26a6fc;
-  font-family: 'Lato', sans-serif;
 }
