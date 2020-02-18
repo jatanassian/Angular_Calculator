@@ -1,5 +1,6 @@
 <div class="calculator">
   <app-display value={{currentNumber}}></app-display>
+
   <app-number (getNumber)="getNumber($event)" value="7"></app-number>
   <app-number (getNumber)="getNumber($event)" value="8"></app-number>
   <app-number (getNumber)="getNumber($event)" value="9"></app-number>
@@ -9,14 +10,16 @@
   <app-number (getNumber)="getNumber($event)" value="1"></app-number>
   <app-number (getNumber)="getNumber($event)" value="2"></app-number>
   <app-number (getNumber)="getNumber($event)" value="3"></app-number>
-  <app-number (getNumber)="getNumber($event)" value="0"></app-number>
+  <app-number (getNumber)="getNumber($event)" value="0" class="zero"></app-number>
   <app-decimal (getDecimal)="getDecimal($event)"></app-decimal>
-  <button type="button" (click)="divideByHundred()">%</button>
-  <button type="button" (click)="oppositeSign()">+/-</button>
-  <app-clear (clear)="clear($event)"></app-clear>
-  <app-operator (getOperation)="getOperation($event)" value='+'></app-operator>
-  <app-operator (getOperation)="getOperation($event)" value='-'></app-operator>
-  <app-operator (getOperation)="getOperation($event)" value='*'></app-operator>
-  <app-operator (getOperation)="getOperation($event)" value='/'></app-operator>
-  <app-equal (getResult)="getResult($event)" value='='></app-equal>
+
+  <app-clear class="clear" (clear)="clear($event)"></app-clear>
+  <button class="opposite" type="button" (click)="oppositeSign()">+/-</button>
+  <button class="percent" type="button" (click)="divideByHundred()">%</button>
+
+  <app-operator class="divide" (getOperation)="getOperation($event)" value='/'></app-operator>
+  <app-operator class="multiply" (getOperation)="getOperation($event)" value='*'></app-operator>
+  <app-operator class="plus" (getOperation)="getOperation($event)" value='+'></app-operator>
+  <app-operator class="minus" (getOperation)="getOperation($event)" value='-'></app-operator>
+  <app-equal class="operator" (getResult)="getResult($event)" value='='></app-equal>
 </div>
