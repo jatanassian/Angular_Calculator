@@ -1,8 +1,8 @@
 button {
   width: 100%;
   height: 100%;
-  background-color: rgb(211, 211,  211);
-  border: solid 1px rgb(211, 211,  211);
+  background-color: rgb(250, 250, 250);
+  border: solid 1px rgb(250, 250, 250);
   outline: none;
   border-style: solid;
   font-family: 'Lato';
@@ -16,5 +16,4 @@ button:hover {
 button:active {
   cursor: grabbing;
   background-color: rgb(190, 190, 190);
-  border: none;
 }
