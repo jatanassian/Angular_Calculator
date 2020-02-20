@@ -15,7 +15,9 @@ button:hover {
 
 button:active {
   cursor: grabbing;
-  background-color: rgb(233, 128, 31);
   border: none;
+  -webkit-box-shadow: inset 0px 0px 5px #3f3f3f;
+     -moz-box-shadow: inset 0px 0px 5px #3f3f3f;
+          box-shadow: inset 0px 0px 5px #3f3f3f;
 }
 
