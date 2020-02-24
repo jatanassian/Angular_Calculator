@@ -54,9 +54,12 @@ export class AppComponent {
   }
 
   getResult() {
-    const result = this.doCalculation(this.operator, Number(this.currentNumber));
-    this.currentNumber = String(result);
-    this.firstOperand = result;
+    // The if statement prevents to trigger an undefined being displayed just by pressing the equal button
+    if (this.operator) {
+      const result = this.doCalculation(this.operator, Number(this.currentNumber));
+      this.currentNumber = String(result);
+      this.firstOperand = result;
+    }
   }
 
   doCalculation(operator: string, secondOperand: number) {
