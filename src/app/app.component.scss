@@ -5,11 +5,10 @@
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto 15% 15% 15% 15% 15%;
   font-size: 10px;
-  width: 380px;
+  width: 360px;
   height: 500px;
-  border-radius: 5px;
-  background-color: lightgrey;
-  opacity: .75;
+  background: linear-gradient(to bottom right, #8134af, #dd2a7b);
+  box-shadow: 5px 5px 5px rgb(20, 20, 20);
 }
 
 app-clear {
@@ -56,8 +55,8 @@ app-equal {
 button {
   width: 100%;
   height: 100%;
-  background-color: rgb(180, 180, 180);
-  border: solid 1px rgb(180, 180, 180);
+  background-color: transparent;
+  border: solid 1px transparent;
   outline: none;
   border-style: solid;
   font-family: 'Lato', sans-serif;
@@ -70,13 +69,20 @@ button:hover {
 
 button:active {
   cursor: grabbing;
-  background-color: rgb(150, 150, 150);
   border: none;
+  -webkit-box-shadow: inset 0px 0px 5px #3f3f3f;
+     -moz-box-shadow: inset 0px 0px 5px #3f3f3f;
+          box-shadow: inset 0px 0px 5px #3f3f3f;
 }
 
 @media only screen and (max-width: 480px) {
+  :host {
+    width: 100%;
+    height: 100%;
+  }
   .calculator {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
   }
 }
