@@ -14,8 +14,6 @@ export class AppComponent {
   waitingForSecondNumber: boolean = false; // Value indicating if the user has finished typing the first operand and is ready to type the second operand
 
   getNumber(nb: string) {
-    console.log(nb);
-
     if (this.waitingForSecondNumber) {
       this.currentNumber = nb;
       this.waitingForSecondNumber = false;
@@ -59,6 +57,7 @@ export class AppComponent {
       const result = this.doCalculation(this.operator, Number(this.currentNumber));
       this.currentNumber = String(result);
       this.firstOperand = result;
+      this.operator = null;
     }
   }
 
